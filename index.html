@@ -1,0 +1,110 @@
+
+<title>Escudo Capitao America</title>
+<head>
+  <style>
+
+     body {
+         background-color: rgb(0, 38, 87);
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         height: 100vh;
+     }
+     
+      .circle {
+         
+
+         border-radius: 50%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         border: 1px solid #3c404f;
+         animation: spin 5s linear infinite;
+       
+         }
+        #circle1 {
+         margin: auto;
+
+          width: 256px;
+          height: 256px;
+          background-color: black;
+          
+        }
+        #circle2 {
+
+          width: 206px;
+          height: 206px;
+          background-color: rgb(245, 239, 239);
+       
+          
+        }
+        #circle3 {
+
+          width: 156px;
+          height: 156px;
+          background-color: #000;
+          
+        }
+        #circle4 {
+
+          width: 106px;
+          height: 106px;
+         
+         background-color: white;
+          
+        }
+
+    #star {
+       border-left: 50px solid transparent;
+       border-right: 50px solid transparent;
+       border-bottom: 35px solid black;
+       transform: rotate(180deg);
+    }
+
+    #star::before {
+        position: absolute;
+        border-left: 50px solid transparent;
+       border-right: 50px solid transparent;
+       border-bottom: 35px solid black;
+       transform: rotate(70deg);
+       content: "";
+       left: -50px;
+
+    }
+
+     #star::after {
+
+        position: absolute;
+        border-left: 50px solid transparent;
+       border-right: 50px solid transparent;
+       border-bottom: 35px solid black;
+       transform: rotate(-70deg);
+       content: "";
+       left: -48.8px;
+       top: 0.1px;
+
+     }
+
+     @keyframes spin {
+         to { transform: rotate(360deg);}
+     }
+     
+      
+  </style>
+     
+    <body>
+        <div id="circle1" class="circle">
+            <div id="circle2" class="circle">
+                <div id="circle3" class="circle">
+                    <div id="circle4" class="circle" >
+                        
+
+                       
+                        <div id="star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </body>
+</head>
